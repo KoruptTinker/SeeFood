@@ -57,7 +57,7 @@ def train():
     model.fit_generator(
         train_gen,
         steps_per_epoch=2000// batch_size,
-        epochs=100,
+        epochs=60,
         validation_data=validation_gen,
         validation_steps=800 // batch_size)
     model.save_weights('./model/seefood.h5')
